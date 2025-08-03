@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psicologa Natalia González</title>
+    <link rel="stylesheet" href="./styles.css">
+	<link rel="icon" type="image/svg+xml" href='./assets/icons/favicon.svg' />
+
+</head>
+<body>
+    <!-- Header / Menú de navegación (Inicio)-->
+     
+    <header class="header">
+        <div class="header__container container">
+
+            <figure class="header__figure">
+                <div class="header__logo--fit">
+                    <a href="/">
+                    <img class="header__logo header__logo--complete" src="./assets/icons/Logo-header.svg" alt="logo">
+                    </a>
+                </div>        
+            </figure>
+            <!-- incio productos nosotros contacto -->
+            <nav class="header__nav">
+                <div class="nav__links" id="nav__selected">
+                    <svg id="nav__close" class="header__closeIcon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"></path></svg>
+                    <a href="/" class="nav__link">Inicio</a>
+                    <a href="/services" class="nav__link">Consultas</a>
+                    <a href="/contact" class="nav__link">Contacto</a>
+                </div>
+                <figure class="header__icons">
+                    <div class="header__menu--container">
+                        <img id="nav__open" class="header__menu"  src="./assets/icons/menu-hamburguesa.svg" alt="menu">
+                    </div>
+                </figure>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Header / Menú de navegación (Fin)-->
+
+
+
+    <!-- Hero (Inicio)-->
+
+    <section class="hero__main container">
+
+      <div class="hero__texts">
+          <h1 class="hero__title">¿Sientes que tu mente no está bien?</h1>
+          <p class="hero__paragraph">No tienes que poder con todo solo. Con el acompañamiento adecuado, sí es posible salir adelante, entender lo que está pasando y empezar a sentirte mejor, paso a paso.</p>
+
+          <a href="#" class="cta">Déjanos tu teléfono y te llamamos</a>  
+      </div>
+
+    </section>
+
+    <!-- Hero (Fin)-->
+
+
+    
+</body>
+</html>
+
+<style>
+
+
+/* INICIO HEADER */
+    .container {
+        width: 90%;
+        margin: 0 auto;
+        padding: var(--padding-container);
+    }
+
+    .header__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 24px 0;
+    }
+
+    .header__figure {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+    }
+
+    .header__logo--fit {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+
+    .header__logo--complete{
+        width: 100%;
+        height: 30px;
+    }
+
+    .header__nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        gap: 16px;
+    }
+
+    .nav__links{
+        opacity: 0;
+        visibility: hidden;
+        position: fixed ;
+        width: 100%;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        background-color: var(--white);
+        /* padding: 5rem 3rem 3rem; */
+        z-index: 2;
+        gap: 70px;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .6);
+        font-size: 1.4rem;
+        
+    }
+
+
+    @keyframes desplazamiento {
+        0%{
+            transform: translateX(100%);
+        }
+        100%{
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes desplazamientoCerrar {
+        0%{
+            transform: translateX(0);
+        }
+        100%{
+            transform: translateX(100%);
+        }
+    }
+
+    .nav__links--mostrar{
+        opacity: 1;
+        visibility: visible;
+        animation: desplazamiento .5s ease-in-out;
+
+    }
+
+    .nav__links--close{
+        animation: desplazamientoCerrar .5s ease-in-out;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .header__closeIcon{
+        width: 40px;
+        height: 40px;
+        fill:var(--primary-color);
+        color: var(--primary-color);
+        align-self: flex-end;
+        margin-right: 10px;
+        margin-top: 10px;
+        cursor: pointer;
+        -webkit-tap-highlight-color: transparent;
+    }
+    .nav__link {
+        display: block;
+        text-decoration: none;
+        color: var(--color-text);
+        font-weight: 600;
+        -webkit-tap-highlight-color: transparent;
+        transition: color 0.3s ease-in-out;
+        -webkit-tap-highlight-color: transparent;
+    }
+    .nav__link:hover{
+        color: var(--primary-color);
+    }
+
+    .header__icons {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        gap: 12px;
+    }
+
+    .header__menu--container{
+        width: 30px;
+        height: 30px;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    .header__menu {
+        width: 30px;
+        height: 30px;
+        color: var(--primary-color);
+        fill: var(--primary-color);
+        cursor: pointer;
+    }
+
+    
+    /*INICIO MEDIAQUERIES MENU DESPLEGABLE*/
+
+    @media(min-width:375px){
+        .header__userIcon{
+        display: block;
+        }
+    }
+
+    @media(min-width:425px){
+        .nav__links{
+            
+        
+            width: 60%;
+        
+        }
+        
+
+    }
+
+    @media(min-width:550px){
+        .nav__links{
+            
+        
+            width: 50%;
+        
+        }
+
+
+    }
+
+    @media(min-width:700px){
+        .nav__links{
+            
+        
+            width: 40%;
+        
+        }
+
+    }
+
+
+    @media(min-width:768px) {
+
+        .nav__links{
+            opacity: 1;
+            visibility: visible;
+            position: inherit;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            padding: 0;
+            box-shadow: inherit;
+            width: inherit;
+            font-size: inherit;
+            background-color: inherit;
+
+
+
+        }
+
+        .header__closeIcon{
+            display: none;
+        }
+
+        .nav__link {
+            display: block;
+        }
+        /*Fin mediaqueries menu desplegable*/
+        
+        .header__menu--container{
+            display: none;
+        }
+        .header__menu{
+            display: none;
+        }
+    }
+/* FIN HEADER */
+</style>
+
+
+<style>
+    /*Inicio Hero*/
+    .hero__main{
+        text-align: center;
+        color: var(--color-text);
+    }
+
+.hero__title{
+    font-family: var(--open-sans-font);
+    font-size: 1.625rem;
+    font-size: clamp(1.625rem, 0.375rem + 6.25vw, 6rem);
+    line-height: 1.1;
+    letter-spacing: -2px;
+}
+
+.hero__paragraph{
+    width: 90%;
+    margin: 16px auto;
+    line-height: 1.5;
+    font-size: var(--default-paragraph-font-size);
+    font-size: var(--paragraph-font-size);
+}
+
+.cta{
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    padding: 16px 30px;
+    border-radius: 30px;
+    margin-top: 16px;
+    font-weight: 600;
+}
+
+.hero__picture{
+    margin-top: 80px;
+
+}
+
+.hero__img{
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: block;
+}
+
+.hero__numbers{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 100px;
+    gap: 60px;
+}
+
+.hero__item{
+    overflow: hidden;
+   
+}
+
+.hero__number{
+    font-size: 60px;
+}
+
+.hero__icon{
+    display: block;
+}
+
+@media(min-width:768px) {
+      
+    
+    .hero__paragraph{
+        width: 70%;
+        
+    }
+    .cta{
+        padding: 16px 45px;
+    }
+}
+/*Fin Hero*/
+
+</style>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+    const nav = document.querySelector('.nav__links');
+    const botonAbrir = document.querySelector('#nav__open');
+    const Linksnav = document.querySelectorAll(".nav__link");
+    const botonAbrirMenu = document.querySelector('.header__menu--container');
+    const botonCerrar = document.querySelector('#nav__close');
+
+    if (botonAbrirMenu && nav) {
+        botonAbrirMenu.addEventListener("click", () => {
+            nav.classList.add('nav__links--mostrar');
+        });
+    }
+
+    if (botonCerrar && nav) {
+        botonCerrar.addEventListener("click", () => {
+            nav.classList.remove("nav__links--mostrar");
+            nav.classList.add("nav__links--close");
+
+            setTimeout(() => {
+                nav.classList.remove("nav__links--close");
+            }, 500);
+        });
+    }
+
+    document.addEventListener("click", function(event) {
+        // Si el clic no ocurrió dentro del menú o del botón para abrir el menú, cerrar el menú
+        if (nav && !nav.contains(event.target) && event.target !== botonAbrir) {
+            nav.classList.remove("nav__links--mostrar");
+        }
+    });
+
+    Linksnav.forEach(link => {
+        link.addEventListener('click', () => {
+            if (nav) {
+                nav.classList.remove("nav__links--mostrar");
+            }
+        });
+    });
+});
+</script>
