@@ -17,7 +17,7 @@
             <figure class="header__figure">
                 <div class="header__logo--fit">
                     <a href="/">
-                    <img class="header__logo header__logo--complete" src="./assets/icons/Logo-header.svg" alt="logo">
+                    <img class="header__logo header__logo--complete" src="./assets/icons/Logo-header.svg" alt="logo" width="208" height="30">
                     </a>
                 </div>        
             </figure>
@@ -60,7 +60,7 @@
     <section class="change">
         <div class="change__main container">
           <div class="change__texts">
-            <h1 class="subtitle">Cuando algo dentro de ti pide un cambio</h1>
+            <h2 class="subtitle">Cuando algo dentro de ti pide un cambio</h2>
             <p class="hero__paragraph change__paragraph">A veces no sabes exactamente qué te pasa, pero lo sientes.</p>
             <p class="hero__paragraph change__paragraph">Una incomodidad constante, un cansancio emocional, una sensación de estar desconectado de ti mismo. Y aunque no siempre puedas explicarlo, lo ves reflejado en:</p>
             <ul class="change__list">
@@ -79,7 +79,7 @@
     <section class="space">
         <div class="change__main container">
           <div class="change__texts">
-            <h1 class="subtitle">¿Para quien es este espacio?</h1>
+            <h2 class="subtitle">¿Para quien es este espacio?</h2>
             <div class="space__message">
                 <span class="linea"></span>
                 <div class="space__italic__message">Este espacio es para ti, tu familia y tus emociones</div>
@@ -131,7 +131,7 @@
 
 
     .header__logo--complete{
-        width: 100%;
+        width: 208px;
         height: 30px;
     }
 
@@ -336,6 +336,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        min-height: 55.25vh;
     }
 
     .hero__texts{
@@ -454,7 +455,8 @@
 .space__italic__message{
     font-family: var(--crimson-text-font);
     font-style: italic;
-    font-size: 44px;
+    font-size: 16px;
+    text-wrap: nowrap;
 }
 
 .space__message {
@@ -470,7 +472,7 @@
   height: 80px;             /* Altura de la línea */
   background-color: var(--primary-color);/* Color de la línea */
   border-radius: 2px;       /* Hace que los bordes sean redondeados */
-  margin-right: 10px;       /* Espacio entre línea y texto */
+  margin-right: 3px;       /* Espacio entre línea y texto */
 }
 /* Fin Para quien es este espacio */
 
