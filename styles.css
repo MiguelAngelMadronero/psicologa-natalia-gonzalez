@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   /* scrollbar-width: none; */
-  font-family: 'Crimson Text';
+  font-family: 'Crimson Text', Georgia, serif;
 
 }
 
@@ -21,8 +21,8 @@
     --margin-container: 16px 0;
     --footer-line-color: #E2E8F0;
     
-    --open-sans-font: 'Open Sans', 'sans-serif';
-    --crimson-text-font: 'Crimson Text', 'serif';
+    --open-sans-font: 'Open Sans', serif;
+    --crimson-text-font: 'Crimson Text', Georgia, serif;
 
 
     --default-title-font-size: 1.625rem; /*26px*/
