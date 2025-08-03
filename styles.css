@@ -26,6 +26,8 @@
     --default-paragraph-font-size: 1rem;
     --paragraph-font-size: clamp(1rem, 0.9285714285714286rem + 0.35714285714285715vw, 1.25rem); /* 20px */
 
+    --box-shadow-button: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
 
     --section-spacing-sm: 3rem;   /* 48px */
     --section-spacing-md: 5rem;   /* 80px */
@@ -73,3 +75,10 @@
     font-weight: 700;
     src: url('./assets/fonts/crimson-text-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
   }
+
+.container {
+  overflow: hidden;
+  width: 90%;
+  margin: 0 auto;
+  padding: var(--padding-container);
+}
