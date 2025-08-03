@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* scrollbar-width: none; */
+  font-family: 'Crimson Text';
+
+}
+
+:root {
+    --white: #fff;
+    --primary-color: #F9ADA0;
+    --secondary-color: #FCD1C2;
+    --primary-background-color:#FFF6F4;
+    --color-grey:hsl(0, 0%, 50%);
+
+    --color-text:#000;
+    --text-light:#737373;
+    --padding-container: 32px 0;
+    --margin-container: 16px 0;
+    --footer-line-color: #E2E8F0;
+    
+    --open-sans-font: 'Open Sans', 'sans-serif';
+    --crimson-text-font: 'Crimson Text', 'serif';
+
+    --default-paragraph-font-size: 1rem;
+    --paragraph-font-size: clamp(1rem, 0.9285714285714286rem + 0.35714285714285715vw, 1.25rem); /* 20px */
+
+
+    --section-spacing-sm: 3rem;   /* 48px */
+    --section-spacing-md: 5rem;   /* 80px */
+    --section-spacing-lg: 7.5rem;   /* 112px */
+
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('./assets/fonts/open-sans-regular.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Open Sans';
+    src: url('./assets/fonts/open-sans-700.woff2') format('woff2');
+    font-weight: 700;
+    font-display: swap;
+    font-style: normal;
+  }
+
+  /* crimson-text-regular - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Crimson Text';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./assets/fonts/crimson-text-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* crimson-text-italic - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Crimson Text';
+    font-style: italic;
+    font-weight: 400;
+    src: url('./assets/fonts/crimson-text-italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* crimson-text-700 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Crimson Text';
+    font-style: normal;
+    font-weight: 700;
+    src: url('./assets/fonts/crimson-text-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
