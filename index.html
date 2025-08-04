@@ -253,6 +253,75 @@
 
     <!-- Consultorias Especializadas (Fin) -->
 
+    <!-- Mensaje inspiracional (Inicio) -->
+    <section class="message">
+        <div class="change__main container container--blog">
+            <div class="change__texts">
+            <p class="hero__paragraph change__paragraph message__message">“Hay dolores que parten el alma en dos. <br>Vacíos que no se ven, pero se sienten en cada rincón del cuerpo.<br>Silencios tan profundos que gritan.”</p>
+            
+            </div>
+        </div>
+    </section>
+
+    <!-- Mensaje inspiracional(Fin) -->
+
+     <!-- About (Inicio) -->
+    <section class="about">
+        <div class="change__main container">
+            <div class="change__texts">
+                <h2 class="subtitle subtitle--left">Hola, soy Natalia</h2>
+
+                <div class="modalities__content">
+                <div class="about__paragraphs">
+                    
+                    <p class="about__paragraph">Antes de convertirme en profesional, tuve una certeza profunda:</p>
+                    <p class="about__paragraph">Mi vida estaba destinada a enseñar, cuidar y acompañar. Inspirada por las mujeres de mi familia, maestras por vocación, soñaba con tener mi propia voz frente a una clase. Con el paso del tiempo, ese sueño se transformó en algo más profundo: quería entender el alma humana. Quería ser psicóloga.</p>
+                    <p class="about__paragraph">Lo que no imaginaba es que ese anhelo me llevaría primero a cruzar por las sombras.</p>
+                </div>
+                <div class="about__check">
+                    
+                <ul class="space__list space__list--about">
+            
+                    <li class="space__item space__item--about">
+                        <span class="space__check">
+                            <img src="./assets/icons/check.svg" alt="icono de check" class="space__icon__check">
+                        </span>
+                        <div class="space__content">
+                            <p class="space__text">Psicóloga con maestría en neuropsicología y educación</p>
+                        </div>
+                    </li>
+                    <li class="space__item space__item--about">
+                        <span class="space__check">
+                            <img src="./assets/icons/check.svg" alt="icono de check" class="space__icon__check">
+                        </span>
+                        <div class="space__content">
+                            <p class="space__text">Más de 17 años acompañando procesos emocionales y cognitivos</p>
+                        </div>
+                    </li>
+                    <li class="space__item space__item--about">
+                        <span class="space__check">
+                            <img src="./assets/icons/check.svg" alt="icono de check" class="space__icon__check">
+                        </span>
+                        <div class="space__content">
+                            <p class="space__text">Consultora y formadora en instituciones educativas y empresas</p>
+                        </div>
+                    </li>
+                </ul>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="about__content container container--blog">
+            <div class="hero__paragraph change__paragraph">En el último año de mi carrera de pedagogía, mi mamá murió de forma repentina, y con su partida, se vino abajo todo lo que yo creía estable. Mi casa se llenó de silencios; fueron años de duelo callado y de inseguridades que me hacían dudar de mí misma, de mi camino, de mis fuerzas. Me sentía sola, rota, apagada. Hubo noches en las que me pregunté si valía la pena seguir. Perdí a mi centro, a mi fuerza, a mi guía. Y con ella, también se fue mi ilusión.</div>
+            <div class="hero__paragraph change__paragraph">Un día, sin muchas expectativas, decidí levantarme. Fui a trabajar como docente en un colegio. Y ahí, en medio de clases, cuadernos, juegos y charlas con adolescentes, comencé a entender algo profundo: acompañar también es sanar. Escuchar a otros me enseñó a escucharme a mí. Ver sus miedos me ayudó a mirar los míos. Y sentí, por primera vez en mucho tiempo, que estaba en el lugar correcto. Mientras trabajaba todo el día en el colegio, comencé a estudiar psicología en las noches. No fue fácil. Era agotador. Pero el dolor también me había enseñado a ser persistente. Incluso antes de graduarme, me dieron la oportunidad de ejercer como psicóloga institucional, y ahí supe que ese era mi lugar.</div>
+            <div class="hero__paragraph change__paragraph">Diseñé escuelas de padres, lideré proyectos de inteligencia emocional, acompañé a docentes en momentos difíciles y estuve al lado de estudiantes que atravesaban sus propios vacíos. Mi herida se convirtió en mi motor, y mi vocación, en el puente entre la teoría y el alma humana.
+            </div>
+        </div>
+    </section>
+
+    <!-- About (Fin) -->
+
+
     
 </body>
 </html>
@@ -576,6 +645,10 @@
     margin-bottom: var(--spacing-md);
 }
 
+.subtitle--left{
+    text-align: center;
+}
+
 .change__texts{
     padding: var(--padding-container);
 }
@@ -593,6 +666,10 @@
 }
 
 @media(min-width:768px) {
+
+    .subtitle--left{
+        text-align: left;
+    }
       
     .change__paragraph {
         text-align: left;
@@ -774,22 +851,65 @@
 /* Inicio Consultorias Especializadas */
 .consulting__message{
     margin: var(--spacing-sm) 0;
-    text-align: center;
+    text-align: left;
 }
 
 @media(min-width:768px) {
     .consulting__message{
         margin: var(--spacing-sm) 0;
-        text-align: left;
     }
-    
-
-
 }
 
 
 /* Fin Consultorias Especializadas */
 
+</style>
+<style>
+    
+/*Inicio Mensaje inspiracional*/
+.message{
+    background-color: var(--primary-background-color);
+}
+
+@media(min-width:768px) {
+    .message__message{
+        text-align: center;
+    }
+}
+/* Fin Mensaje inspiracional */
+</style>
+<style>
+    
+/*Inicio about*/
+.about__paragraph{
+    text-align: center;
+    margin-bottom: var(--spacing-sm);
+    font-family: var(--crimson-text-font);
+    font-size: var(--default-paragraph-font-size);
+    font-size: var(--paragraph-font-size);
+}
+
+.about__check{
+    justify-self: center;
+    align-self: center;
+}
+
+.space__item--about{
+    margin-bottom: var(--spacing-sm);
+}
+
+.about__text{
+    margin-top: var(--spacing-md);
+}
+
+
+
+@media(min-width:768px) {
+    .about__paragraph{
+        text-align: left;
+    }
+}
+/* Fin about */
 </style>
 
 <script>
