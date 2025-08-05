@@ -46,6 +46,7 @@
     --section-spacing-md: 5rem;   /* 80px */
     --section-spacing-lg: 7.5rem;   /* 112px */
 
+    --responsive-spacing-lg: clamp(40px, 4.17vw, 64px);
     --responsive-spacing-md: clamp(20px, 2.085vw, 32px); /* 32px */
     --responsive-spacing-xs: clamp(8px, 2vw, 24px);
 
