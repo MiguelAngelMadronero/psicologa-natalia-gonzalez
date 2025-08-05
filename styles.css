@@ -31,15 +31,24 @@
     --subtitle-font-size: clamp(1.21875rem, 0.28125rem + 4.6875vw, 4.5rem); /* 72px */
     --default-paragraph-font-size: 1rem;
     --paragraph-font-size: clamp(1rem, 0.9285714285714286rem + 0.35714285714285715vw, 1.25rem); /* 20px */
+    --default-sm-subtitle-font-size: 1.15rem;
+    --sm-subtitle-font-size: clamp(1.15rem, 1rem + 1vw, 2.75rem);
+    --default-xs-subtitle-font-size: 1rem;
+    --xs-subtitle-font-size: clamp(1rem, 0.5rem + 2.5vw, 2.75rem);
 
     --box-shadow-button: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 
+    --spacing-lg: 4rem; /* 64px */
     --spacing-md: 2rem; /* 32px */
     --spacing-sm: 1rem; /* 16px */
     --spacing-xs: 0.5rem; /* 8px */
     --section-spacing-sm: 3rem;   /* 48px */
     --section-spacing-md: 5rem;   /* 80px */
     --section-spacing-lg: 7.5rem;   /* 112px */
+
+    --responsive-spacing-md: clamp(20px, 2.085vw, 32px); /* 32px */
+    --responsive-spacing-xs: clamp(8px, 2vw, 24px);
+
 
 }
 
