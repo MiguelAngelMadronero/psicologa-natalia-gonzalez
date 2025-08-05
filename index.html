@@ -441,7 +441,7 @@
 
     
      <!-- CTA section (Inicio) -->
-      <section class="cta__section change__texts">
+      <section class="cta__section change__texts spacing__lg">
         <div class="change__main container container--blog cta__container">
             <div class="change__texts">
             <div class="cta__card">
@@ -452,6 +452,42 @@
         </div>
     </section>
     <!-- CTA section (Fin) -->
+
+    <!-- Footer (Inicio) -->
+    <footer class="footer">
+        <div class="footer__container container">
+            <div class="change__texts footer__elements">
+                <div class="footer__content">
+                    <img src="./assets/icons/footer-logo.svg" alt="logo del pie de página" class="footer__logo">
+                    <div class="footer__nav">
+                        <a href="#" class="footer__nav__link">Inicio</a>
+                        <a href="#" class="footer__nav__link">Consultas</a>
+                        <a href="#" class="footer__nav__link">Contacto</a>
+
+                    </div>
+
+                    <div class="footer__social">
+                        <a href="#" id="link" class="footer__link" target="_blank">
+                            <img src="./assets/icons/instagram.svg" alt="icono de instagram" class="link__img" width="24px" height="25px">
+                        </a>
+                        <a href="#"  class="footer__link" target="_blank">
+                            <img src="./assets/icons/whatsapp.svg" alt="icono de whatsapp" class="link__img" width="24px" height="25px">
+                        </a>    
+                        <a href="#"  class="footer__link" target="_blank">
+                            <img src="./assets/icons/linkedin.svg" alt="icono de linkedin" class="link__img" width="24px" height="25px">
+                        </a>    
+                        <a href="#" id="link" class="footer__link" target="_blank">
+                            <img src="./assets/icons/tiktok.svg" alt="icono de tiktok" class="link__img" width="21px" height="25px"> 
+                        </a>
+                    </div>
+                    
+                    
+                </div>
+                <div class="footer__rights">© 2025 Natalia González - Todos los derechos reservados</div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer (Fin) -->
 
     
 </body>
@@ -1068,6 +1104,9 @@
 
 <style>
     /* Inicio CTA section */
+    .spacing__lg{
+        padding: var(--responsive-spacing-lg) 0;
+    }
     .cta__container{
         background-color: var(--primary-background-color);
     }
@@ -1140,6 +1179,81 @@
     }
 
     /*Fin Questions Todo lo que necesitas para una mejor experiencia.*/
+</style>
+
+<style>
+    /*Inicio Footer*/
+    .footer{
+        background-color: var(--primary-background-color);
+    }
+
+    .footer__content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: var(--spacing-md);
+    }
+
+    .footer__nav{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: var(--spacing-xs);
+        
+    }
+
+    .footer__nav__link{
+        text-decoration: none;
+        color: var(--color-text);
+        font-size: var(--default-paragraph-font-size);
+        font-size: var(--paragraph-font-size);
+    }
+
+    .footer__social{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: var(--spacing-xs);
+    }
+
+    .footer__link{
+        text-decoration: none;
+    }
+
+
+
+    .footer__rights{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+
+
+
+    @media(min-width:768px) {
+
+        .footer__elements{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .footer__content{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            gap: var(--spacing-md);
+            margin-bottom: var(--spacing-lg);
+        }
+
+        .footer__nav{
+            gap: var(--spacing-md);
+        }
+    }
+    /*Fin Footer*/
 </style>
 
 <script>
