@@ -458,7 +458,7 @@
         <div class="footer__container container">
             <div class="change__texts footer__elements">
                 <div class="footer__content">
-                    <img src="./assets/icons/footer-logo.svg" alt="logo del pie de página" class="footer__logo">
+                    <footer class="footer__figure"><img src="./assets/icons/footer-logo.svg" alt="logo del pie de página" class="footer__logo"></footer>
                     <div class="footer__nav">
                         <a href="#" class="footer__nav__link">Inicio</a>
                         <a href="#" class="footer__nav__link">Consultas</a>
@@ -1208,6 +1208,7 @@
         color: var(--color-text);
         font-size: var(--default-paragraph-font-size);
         font-size: var(--paragraph-font-size);
+        font-weight: 600;
     }
 
     .footer__social{
@@ -1260,6 +1261,17 @@
 
         .footer__nav{
             gap: var(--spacing-md);
+            justify-content: center;
+            flex: 1;
+        }
+
+        .footer__logo{
+            width: 218px;
+            height: auto;
+        }
+
+        .footer__figure, .footer__social {
+            flex: 1;  
         }
     }
     /*Fin Footer*/
