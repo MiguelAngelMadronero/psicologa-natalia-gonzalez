@@ -317,13 +317,6 @@
             <div class="hero__paragraph change__paragraph">Diseñé escuelas de padres, lideré proyectos de inteligencia emocional, acompañé a docentes en momentos difíciles y estuve al lado de estudiantes que atravesaban sus propios vacíos. Mi herida se convirtió en mi motor, y mi vocación, en el puente entre la teoría y el alma humana.
             </div>
         </div>
-        <div class="about__content container container--blog">
-            <div class="hero__paragraph change__paragraph">En el último año de mi carrera de pedagogía, mi mamá murió de forma repentina, y con su partida, se vino abajo todo lo que yo creía estable. Mi casa se llenó de silencios; fueron años de duelo callado y de inseguridades que me hacían dudar de mí misma, de mi camino, de mis fuerzas. Me sentía sola, rota, apagada. Hubo noches en las que me pregunté si valía la pena seguir. Perdí a mi centro, a mi fuerza, a mi guía. Y con ella, también se fue mi ilusión.</div>
-            <div class="hero__paragraph change__paragraph">Un día, sin muchas expectativas, decidí levantarme. Fui a trabajar como docente en un colegio. Y ahí, en medio de clases, cuadernos, juegos y charlas con adolescentes, comencé a entender algo profundo: acompañar también es sanar. Escuchar a otros me enseñó a escucharme a mí. Ver sus miedos me ayudó a mirar los míos. Y sentí, por primera vez en mucho tiempo, que estaba en el lugar correcto. Mientras trabajaba todo el día en el colegio, comencé a estudiar psicología en las noches. No fue fácil. Era agotador. Pero el dolor también me había enseñado a ser persistente. Incluso antes de graduarme, me dieron la oportunidad de ejercer como psicóloga institucional, y ahí supe que ese era mi lugar.</div>
-            <div class="hero__paragraph change__paragraph">Diseñé escuelas de padres, lideré proyectos de inteligencia emocional, acompañé a docentes en momentos difíciles y estuve al lado de estudiantes que atravesaban sus propios vacíos. Mi herida se convirtió en mi motor, y mi vocación, en el puente entre la teoría y el alma humana.
-            </div>
-        </div>
-
         <div class="about__end container">
             <div class="modalities__content">
                 <div class="about__paragraphs about__paragraphs--end">
@@ -1193,6 +1186,7 @@
         align-items: center;
         justify-content: center;
         gap: var(--spacing-md);
+        position: relative;
     }
 
     .footer__nav{
@@ -1259,6 +1253,19 @@
             margin-bottom: var(--spacing-lg);
         }
 
+        
+        .footer__content::after{
+            position: absolute;
+            left: 5%;
+            bottom: -40%;
+            content: "";
+            display: block;
+            width: 90%;
+            height: 1px;
+            background-color: var(--primary-color);
+            margin: 0 auto;
+        }
+
         .footer__nav{
             gap: var(--spacing-md);
             justify-content: center;
@@ -1272,6 +1279,10 @@
 
         .footer__figure, .footer__social {
             flex: 1;  
+        }
+
+        .footer__social{
+            justify-content: flex-end;
         }
     }
     /*Fin Footer*/

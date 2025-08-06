@@ -406,6 +406,203 @@
 /*Fin Hero*/
 
 
+/* Inicio Cuando algo dentro de ti pide un cambio */
+
+.change__main{
+    text-align: center;
+    color: var(--color-text);
+}
+
+.subtitle {
+    font-family: var(--open-sans-font);
+    font-size: var(--default-subtitle-font-size);
+    font-size: var(--subtitle-font-size);
+    margin-bottom: var(--spacing-md);
+}
+
+.subtitle--left{
+    text-align: center;
+}
+
+.change__texts{
+    padding: var(--padding-container);
+}
+
+.change__paragraph {
+    width: 100%;
+}
+
+.change__list {
+    text-align: left;
+    list-style: disc;
+    padding-left: 20px;
+    font-size: var(--default-paragraph-font-size);
+    font-size: var(--paragraph-font-size);
+}
+
+@media(min-width:768px) {
+
+    .subtitle--left{
+        text-align: left;
+    }
+      
+    .change__paragraph {
+        text-align: left;
+    }
+
+}
+
+/* Fin Cuando algo dentro de ti pide un cambio */
+
+/* Inicio Para quien es este espacio */
+
+.space__italic__message{
+    font-family: var(--crimson-text-font);
+    font-style: italic;
+    font-size: var(--default-xs-subtitle-font-size);
+    font-size: var(--xs-subtitle-font-size);
+    text-wrap: nowrap;
+}
+
+.space__message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: var(--margin-container);
+  margin-bottom: var(--spacing-md);
+}
+
+.linea {
+  width: 4px;               /* Grosor de la línea */
+  height: 80px;             /* Altura de la línea */
+  background-color: var(--primary-color);/* Color de la línea */
+  border-radius: 2px;       /* Hace que los bordes sean redondeados */
+  margin-right: clamp(3px, 1vw, 10px);       /* Espacio entre línea y texto */
+}
+
+.space__list {
+    text-align: left;
+    list-style: none;
+}
+
+.space__item{
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--spacing-md);
+    gap: var(--spacing-xs);
+}
+
+.space__check {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 43px;
+    height: 43px;
+    background-color: var(--primary-background-color);
+    border-radius: 50%;
+    flex-shrink: 0;
+    align-self: flex-start;
+}
+
+.space__subtitle{
+    font-size: var(--default-paragraph-font-size);
+    font-size: var(--paragraph-font-size);
+    font-weight: 700;
+}
+
+.space__text{
+    font-size: var(--default-paragraph-font-size);
+    font-size: var(--paragraph-font-size);
+}
+
+.space__final__message{
+    font-size: var(--default-paragraph-font-size);
+    font-size: var(--paragraph-font-size);
+    font-weight: 700;
+    text-align: left;
+
+}
+
+.space__text--consultas {
+    margin: var(--spacing-sm) 0;
+}
+
+.space__text--top{
+    margin-top:0;
+}
+/* Fin Para quien es este espacio */
+
+/* Inicio Consultorias Especializadas */
+.consulting__message{
+    margin: var(--spacing-sm) 0;
+    text-align: left;
+}
+
+@media(min-width:768px) {
+    .consulting__message{
+        margin: var(--spacing-sm) 0;
+    }
+}
+
+
+/* Fin Consultorias Especializadas */
+
+/* Inicio CTA section */
+    .spacing__lg{
+        padding: var(--responsive-spacing-lg) 0;
+    }
+    .cta__container{
+        background-color: var(--primary-background-color);
+    }
+
+    .cta__card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-self: center;
+        background-color: var(--primary-background-color);
+        padding: var(--spacing-sm) var(--spacing-xs);
+        width: 100%;
+        gap: var(--responsive-spacing-md);
+    }
+
+    .cta__subtitle{
+        font-family: var(--open-sans-font);
+        font-weight: 700;
+        font-size: var(--default-sm-subtitle-font-size);
+        font-size: var(--sm-subtitle-font-size);
+    }
+
+    .cta__cta{
+        font-size: var(--default-paragraph-font-size);
+        font-size: var(--paragraph-font-size);
+        border-radius: 5px;
+        box-shadow: none;
+        padding: 12px 10px;
+    }
+
+    /* Fin CTA section */
+
+/* InicioTexto Blog*/
+.subtitle--blog{
+    font-size: 1.21875rem;
+    font-size: clamp(1.21875rem, 0.4955357142857144rem + 3.6160714285714284vw, 3.75rem);
+    text-align: left;
+}
+
+.blog__paragraph{
+    text-align: left;
+}
+
+@media(min-width:768px) {
+
+    .subtitle--blog{
+        text-align: left;
+    }
+
+
+}
+/* Fin Texto Blog*/
 
 /*Inicio Footer*/
     .footer{
@@ -418,6 +615,7 @@
         align-items: center;
         justify-content: center;
         gap: var(--spacing-md);
+        position: relative;
     }
 
     .footer__nav{
@@ -484,6 +682,18 @@
             margin-bottom: var(--spacing-lg);
         }
 
+        .footer__content::after{
+            position: absolute;
+            left: 5%;
+            bottom: -40%;
+            content: "";
+            display: block;
+            width: 90%;
+            height: 1px;
+            background-color: var(--primary-color);
+            margin: 0 auto;
+        }
+
         .footer__nav{
             gap: var(--spacing-md);
             justify-content: center;
@@ -497,6 +707,10 @@
 
         .footer__figure, .footer__social {
             flex: 1;  
+        }
+
+        .footer__social{
+            justify-content: flex-end;
         }
     }
     /*Fin Footer*/
