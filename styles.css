@@ -34,6 +34,8 @@
     --paragraph-font-size: clamp(1rem, 0.9285714285714286rem + 0.35714285714285715vw, 1.25rem); /* 20px */
     --default-sm-subtitle-font-size: 1.15rem;
     --sm-subtitle-font-size: clamp(1.15rem, 1rem + 1vw, 2.75rem);
+    --default-contact-subtitle-font-size: 1.15rem;
+    --contact-subtitle-font-size: clamp(1.15rem, 1rem + 2vw, 2.25rem);
     --default-xs-subtitle-font-size: 1rem;
     --xs-subtitle-font-size: clamp(1rem, 0.5rem + 2.5vw, 2.75rem);
 

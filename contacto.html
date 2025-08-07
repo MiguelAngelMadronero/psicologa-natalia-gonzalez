@@ -44,12 +44,69 @@
 
     <!-- Hero (Inicio)-->
 
-    <main class="hero">
-        <div class="hero__main container">
-          <div class="hero__texts">
-              <h1 class="hero__title">¿Sientes que tu mente no está bien?</h1>
-              <p class="hero__paragraph">No tienes que poder con todo solo. Con el acompañamiento adecuado, sí es posible salir adelante, entender lo que está pasando y empezar a sentirte mejor, paso a paso.</p>
-              <a href="#" class="cta">Déjanos tu teléfono y te llamamos</a>
+    <main class="hero hero__contact">
+        <div class="hero__main container hero__main--contact">
+            <div class="hero__texts">
+                <h1 class="hero__title">Contacto</h1>
+                <section class="main__contact container" id="contacto">
+                    <div class="main__content container">
+                    <h2 class="contact__subtitle">Formulario de contacto</h2>
+                    <p class="paragraph__contact">Escríbenos un mensaje y agendaremos tu cita.</p>
+                    <form  class="form" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="cd2a9e20-4074-4572-8cc8-02fcbe9eb21c">
+                        <div class="container__full__name">
+                            <div class="form__container form__container--full__name">
+                            <label for="name" class="form__label">Nombre</label>
+                            <input class="form__input" type="text" id="name" name="name" placeholder="Nombre" required >
+                            </div>
+                            <div class="form__container form__container--full__name">
+                            <label for="last_name" class="form__label">Apellido</label>
+                            <input class="form__input" type="text" id="last_name" name="last_name" placeholder="Apellido" required >
+                            </div>
+                        </div>
+                        <div class="form__container">
+                        <label for="email" class="form__label">Email</label>
+                        <input class="form__input" type="email" id="email" name="email" placeholder="Email" required >
+
+                        </div>
+                        <div class="form__container">
+                        <label for="telefono" class="form__label">Telefono</label>
+                        <input class="form__input" type="number" id="telefono" name="telefono" placeholder="Telefono" required >
+
+                        </div>
+                        <div class="form__container">
+                        <label for="mensaje" class="form__label">Mensaje</label>
+                        <textarea class="form__input form__message" id="mensaje" name="mensaje" placeholder="Mensaje"></textarea>
+
+                        </div>
+                        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                        <input id="send" type="submit" class="form__submit main__cta contact__btn" value="Enviar mensaje">
+                        
+                    </form>
+                    </div>
+                    <div class="contact__information">
+                        <div class="information__item">
+                            <figure class="figure__contact">
+                                <img src="./assets/icons/ubicacion.svg" alt="icono de ubicacion" class="icon__contact">
+                            </figure>
+                            <p class="contact__text">Colombia, Pererira - Risaralda, Av Juan B<br> Gutierrez #19-12 Edificio Tripoli Consultorio 506</p>
+                        </div>
+                        <div class="information__item">
+                            <figure class="figure__contact">
+                                <img src="./assets/icons/correo.svg" alt="icono de correo" class="icon__contact">
+                            </figure>
+                            <p class="contact__text">psiconataliagonzalezz@gmail.com</p>
+                        </div>
+                        <div class="information__item">
+                            <figure class="figure__contact">
+                                <img src="./assets/icons/whatsapp-contact.svg" alt="icono de whatsapp" class="icon__contact">
+                            </figure>
+                            <p class="contact__text">+57 3127699060</p>
+                        </div>
+                    </div>
+
+                
+                </section>
           </div>
         </div>
     </main>
@@ -69,13 +126,13 @@
                     </div>
 
                     <div class="footer__social">
-                        <a href="#" id="link" class="footer__link" target="_blank">
+                        <a href="https://www.instagram.com/psicologa_nataliagonzalez?igsh=anc5NnN5Mmpvejdx&utm_source=qr" id="link" class="footer__link" target="_blank">
                             <img src="./assets/icons/instagram.svg" alt="icono de instagram" class="link__img" width="24px" height="25px">
                         </a>
-                        <a href="#"  class="footer__link" target="_blank">
+                        <a href="https://wa.me/+573127699060"  class="footer__link" target="_blank">
                             <img src="./assets/icons/whatsapp.svg" alt="icono de whatsapp" class="link__img" width="24px" height="25px">
                         </a>    
-                        <a href="#"  class="footer__link" target="_blank">
+                        <a href="linkedin.com/in/natalia-gonzalez-a2247b362"  class="footer__link" target="_blank">
                             <img src="./assets/icons/linkedin.svg" alt="icono de linkedin" class="link__img" width="24px" height="25px">
                         </a>    
                         <a href="#" id="link" class="footer__link" target="_blank">
@@ -94,3 +151,292 @@
     <script src="./js/menu.js"></script>
 </body>
 </html>
+
+<style>
+    .hero__contact{
+        background: linear-gradient(to bottom, var(--primary-background-color) 50%, #fff 50%);
+
+    }
+    .hero__main--contact {
+        align-items: flex-start;
+    }
+
+    .hero__title{
+        margin-bottom: var(--spacing-lg);
+    }
+
+    .hero__texts{
+        min-width: 100%;
+    }
+    .main__contact{
+        display: grid;
+        grid-template-columns:  1fr;
+        grid-template-rows: 1fr;
+        background-color: var(--white);
+        border-radius: 10px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+        gap: 32px;
+    }
+
+    .img__contact{
+        display: none;
+    }
+    .main__contact{
+        width: 100%;
+    }
+    .contact__subtitle{
+        color: var(--text-color);
+        font-size: var(--default-contact-subtitle-font-size);
+        font-size: var(--contact-subtitle-font-size);
+        text-align: center;
+        margin-bottom: 2.5%;
+        font-family: var(--open-sans-font);
+    }
+    .paragraph__contact{
+        font-size: var(--default-paragraph-font-size);
+        font-size: var(--paragraph-font-size);
+        text-align: center;
+        font-weight: 500;
+        margin-bottom: 5.5%;
+        color: var(--text-light);
+    }
+
+    .form{
+        display: grid;
+        gap: 2rem ;
+    }
+
+    .form__container{
+        position: relative;
+
+    }
+
+    .container__full__name{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        width: 100%;
+    }
+
+    .form__input{
+        width: 100%;
+        background-color: transparent;
+        color: var(--text-color);
+        border: 1px solid #A7A7A7;
+        border-radius: 10px;
+        outline: none;
+        font-family: var(--font-open-sans);
+        caret-color: var(--text-light);
+        font-size: 1rem;
+        padding: .75rem 1rem .75rem 1rem  ;
+        
+        /*
+        transition: border-bottom .2s ease-in-out;
+        
+        */
+    }
+
+
+    .form__input:focus{
+        border-bottom: 3px solid var(--primary-color);
+    }
+
+
+
+    .form__input:focus + .form__label{
+        color:var(--color-rose)
+    }
+
+    .form__label{
+        display: block;
+        color: #A2A2A2;
+        cursor: pointer;
+        font-size: 16px;
+        text-align: left;
+        margin-bottom: var(--spacing-xs);
+        /*
+        position: absolute;
+        top: 2px;
+        left: 8px;
+        transform: translateY(-2px);
+        transition: color .2s ease-in-out;
+        */
+        
+    }
+
+    .form__submit{
+        width: fit-content;
+        border: none;
+        text-decoration: none;
+        padding: 14px 40px;
+        color: #fff;
+        background-color: var(--primary-color);
+        font-size: 20px;
+        font-size: clamp(1.25rem, 1.1785714285714286rem + 0.35714285714285715vw, 1.5rem);
+        border-radius: 10px;
+        transition: background-color 0.3s ease-in-out;
+        margin-bottom: 8%;
+        -webkit-tap-highlight-color: transparent;
+        cursor: pointer;
+        color: var(--text-color);
+        width: 100%;
+    }
+    .form__submit:hover{
+        background-color: var(--secondary-color);
+    }
+
+
+    .form__message{
+        resize: none;
+        outline: none;
+        overflow: auto;
+        scrollbar-width: none;
+        height: 140px;
+    }
+
+    .contact__figure{
+        display: none;
+        
+    }
+
+    .contact__information{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: var(--responsive-spacing-lg);
+    }
+
+    .information__item{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: var(--responsive-spacing-xs)
+
+    }
+
+    .figure__contact{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 67px;
+        height: 67px;
+        border-radius: 10px;
+        background-color: var(--primary-background-color);
+    }
+
+    .contact__text{
+        font-size: var(--default-paragraph-font-size);
+        font-size: var(--paragraph-font-size);
+    }
+    
+    @media(min-width:1024px){
+        .main__contact{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 1fr;
+            gap: 0px;
+        }
+        .contact__figure{
+            display: block;
+        }
+        .img__contact{
+            display: block;
+            width: 90%;
+            height: auto;
+            max-width: 500px;
+            object-fit: contain;
+            margin: 0 auto;
+
+        }
+        .main__content{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 90%;
+            margin: 0 auto;
+            padding: 0;
+        }
+        .container__full__name{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 1vw;
+            width: 100%;
+        }
+
+        .form__container--full__name{
+            flex:1;
+        }
+        .contact__subtitle{
+        text-align: left;
+        }
+
+        .paragraph__contact{
+        text-align: left;
+        }
+
+        .contact__information{
+            display: flex;
+            width: fit-content;
+            margin: 0 auto;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            gap: var(--responsive-spacing-lg);
+        }
+
+        .information__item{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+            font-size: 16px;
+
+        }
+
+
+        .contact__text{
+            font-size: 16px;
+            text-align: left;
+            max-width: 316px;
+        }
+
+        .contact__btn{
+            font-size:1rem;
+        }
+    
+    }
+</style>
+
+ <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        const form = document.querySelector(".form");
+
+        form.addEventListener("submit", async function(event) {
+            event.preventDefault(); // Evita el envío inmediato del formulario
+
+            const formData = new FormData(form);
+
+            try {
+                const response = await fetch(form.action, {
+                    method: form.method,
+                    body: formData
+                });
+                alert("hola: ", response.ok)
+
+                if (response.ok) {
+                  window.location.href = "https://web3forms.com/success"; // Redirige a Web3Forms
+                  form.reset(); // Limpia los campos del formulario
+                } else {
+                    alert("Error al enviar el formulario. Intenta de nuevo.");
+                }
+            } catch (error) {
+                console.error("Error:", error);
+                alert("Ocurrió un error. Intente más tarde.");
+            }
+        });
+    });
+</script>
