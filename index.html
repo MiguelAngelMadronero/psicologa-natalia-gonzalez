@@ -1040,6 +1040,26 @@
     justify-content: center;
     text-decoration: none;
     color: var(--color-text);
+    width: fit-content;
+    position:relative;
+    padding: 4px;
+}
+
+.areas__leer::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0%; /* Inicia vacío */
+    background: var(--primary-color-transparent); /* Color del hover */
+    transition: height 0.3s ease; /* Animación de altura */
+    z-index: -1;
+}
+
+.areas__leer:hover::before {
+    height: 100%;
+    border-bottom: 2px solid var(--primary-color);
 }
 
 .areas__cta {
