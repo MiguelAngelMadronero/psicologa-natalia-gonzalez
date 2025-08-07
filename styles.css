@@ -10,6 +10,7 @@
 :root {
     --white: #fff;
     --primary-color: #F9ADA0;
+    --primary-color-transparent: rgb(249, 173, 160, 0.3);
     --secondary-color: #FCD1C2;
     --primary-background-color:#FFF6F4;
     --color-grey:hsl(0, 0%, 50%);
